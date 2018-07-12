@@ -18,7 +18,8 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint index.js",
-    "test": "tape '__tests__/*.spec.js' | faucet"
+    "test": "tape '__tests__/*.spec.js' | faucet",
+    "prepare": "yarn lint && yarn test"
   },
   "dependencies": {},
   "devDependencies": {
