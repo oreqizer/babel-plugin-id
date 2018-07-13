@@ -8,8 +8,8 @@ module.exports = function id(babel) {
             path.node.arguments.length !== 1 ||
             path.node.arguments[0].type !== "StringLiteral"
           ) {
-            path.buildCodeFrameError(
-              "Function " + fn + " expects exactly 1 argument of type String!"
+            throw path.buildCodeFrameError(
+              "Function '" + fn + "' expects exactly 1 argument of type String!"
             );
           }
 
