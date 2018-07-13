@@ -1,5 +1,10 @@
 # babel-plugin-id
 
+[![Build Status](https://travis-ci.org/oreqizer/babel-plugin-id.svg?branch=master)](https://travis-ci.org/oreqizer/babel-plugin-id)
+[![codecov](https://codecov.io/gh/oreqizer/babel-plugin-id/branch/master/graph/badge.svg)](https://codecov.io/gh/oreqizer/babel-plugin-id)
+[![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
+[![npm (scoped)](https://img.shields.io/npm/v/babel-plugin-id.svg)](https://www.npmjs.com/package/babel-plugin-id)
+
 Literally all it does is it evaluates a function to its argument. Useful for **translation collection**, for example.
 
 Function name defaults to `__`.

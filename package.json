@@ -18,7 +18,8 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint index.js",
-    "test": "tape '__tests__/*.spec.js' | faucet",
+    "test": "tape tests/*.spec.js",
+    "test:coverage": "nyc --reporter=lcov > coverage.lcov npm test",
     "prepare": "yarn lint && yarn test"
   },
   "dependencies": {},
@@ -30,6 +31,7 @@
     "eslint-plugin-import": "^2.13.0",
     "eslint-plugin-prettier": "^2.6.2",
     "faucet": "^0.0.1",
+    "nyc": "^12.0.2",
     "prettier": "^1.13.7",
     "tape": "^4.9.1"
   },
